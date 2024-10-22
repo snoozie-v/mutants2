@@ -1,0 +1,153 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 277.15px;
+  height: 75px;
+}
+
+.socials {
+
+  display: flex;
+  gap: 5px;
+}
+
+.social img {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+}
+
+
+.wallet img {
+  width: 178.5px;
+  height: 31px;
+  object-fit: cover;
+}
+
+.image p {
+  text-align: center;
+}
+
+.image-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+
+ .image {
+  flex: 1;
+  max-width: calc(50% - 5px);
+  min-width: 145px;
+  width: 100%;
+  height: auto;
+
+ }
+
+ @media (max-width: 1199px),(min-width:801) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .wallet {
+    order: -2;
+    align-self: flex-end;
+  }
+  
+  .logo {
+    order: -1;
+  }
+  .socials {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    order: 0;
+    align-self: flex-start;
+    display: flex;
+
+    float: left;
+    gap: 5px;
+  }
+  
+   .image-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   }
+  }
+  
+
+@media (max-width: 800px) {
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.wallet {
+  order: -2;
+  align-self: flex-end;
+}
+
+.logo {
+  order: -1;
+}
+.socials {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  order: 0;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  gap: 5px;
+}
+
+ .image-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ }
+}
+
+@media (min-width: 1650px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .wallet {
+    order: -2;
+    align-self: flex-end;
+  }
+  
+  .logo {
+    order: -1;
+  }
+  .socials {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    order: 0;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    gap: 5px;
+  }
+  
+   .image-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   }
+  }
